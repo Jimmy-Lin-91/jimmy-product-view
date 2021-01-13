@@ -5,8 +5,8 @@
   "main": "./server/index.js",
   "scripts": {
     "test": "jest",
-    "start": "node ./server/index.js && npm run build",
-    "build": "webpack",
+    "heroku-prebuild": "npm install --dev && webpack --config webpack.config.js",
+    "start": "node ./server/index.js",
     "seed": "node data/seed.js"
   },
   "repository": {
