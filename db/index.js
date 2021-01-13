@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-const mongoUri = "mongodb://database/items";
+const mongoUri = "mongodb://localhost/items";
 const db = mongoose.connect(mongoUri, { "useNewUrlParser": true })
   .then(()=> {
     console.log("Mongo DB connected");
