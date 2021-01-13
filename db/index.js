@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-
+const config = require('../config.json');
 mongoose.Promise = global.Promise;
-const mongoUri = "mongodb://localhost/items";
+const mongoUri = `mongodb+srv://Jimmy:${config.password}@users.x162c.mongodb.net/${config.dbname}?retryWrites=true&w=majority`;
 const db = mongoose.connect(mongoUri, { "useNewUrlParser": true })
   .then(()=> {
     console.log("Mongo DB connected");
