@@ -5,10 +5,9 @@
   "main": "./server/index.js",
   "scripts": {
     "test": "jest",
-    "start": "node ./server/index.js & npm run build",
+    "start": "node ./server/index.js && npm run build",
     "build": "webpack",
     "seed": "node data/seed.js"
-    // "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
