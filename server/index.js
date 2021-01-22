@@ -14,4 +14,4 @@ app.use(express.static(path.join(__dirname, '..','client', 'dist')));
 app.use('/api', router);
 app.use(bodyparser.json());
 
-app.listen(port, () => console.log(`Listening on ${port}`));
+app.listen(process.env.PORT || port, () => console.log(`Listening on ${port}`));
