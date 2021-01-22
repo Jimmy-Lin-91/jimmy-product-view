@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "heroku-prebuild": "npm install --dev & webpack --config webpack.config.js",
-    "start": "node ./server/index.js",
+    "start": "node ./server/index.js & webpack --watch",
     "seed": "node data/seed.js"
   },
   "repository": {
