@@ -8,9 +8,9 @@
   "main": "./server/index.js",
   "scripts": {
     "test": "jest",
-    "heroku-prebuild": "npm install --dev & webpack",
+    "heroku-prebuild": "npm install --dev",
     "start": "node ./server/index.js",
-    "dev": "webpack",
+    "build": "webpack",
     "seed": "node data/seed.js"
   },
   "repository": {
